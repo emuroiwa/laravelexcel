@@ -17,3 +17,7 @@
 
 Route::get('/', 'StudentController@index')->name('index');
 Route::post('import', 'StudentController@import')->name('import');
+Route::get('generate-pdf','HomeController@generatePDF');
+Route::get('/export_excel', 'ExportExcelController@index');
+Route::get('/export_excel/excel', 'ExportExcelController@excel')->name('export_excel.excel');
+
